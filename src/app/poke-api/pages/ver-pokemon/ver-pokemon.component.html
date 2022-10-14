@@ -1,1 +1,36 @@
-<p>ver-pokemon works!</p>
+<div class="container">
+
+    <div class="properties">
+        <div  class="imgPok">
+            <img [src]="data.img" alt="imgPok">
+        </div>
+
+        <div class="info">
+            <h2 class="name">{{data.name | titlecase}}</h2>
+            <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, omnis inventore. Quae quaerat quam laborum consequuntur enim .</p>
+        </div>
+
+        <div class="skills">
+            
+            <div class="ability">
+                <h5>Type</h5>
+                <p>{{data.types[0]}}</p>
+            </div>
+            <div class="ability">
+                <h5>Height</h5>
+                <p>{{data.height}}</p>
+            </div>
+            <div class="ability">
+                <h5>Weight</h5>
+                <p>{{data.weight}}</p>
+            </div>
+            <div class="ability">
+                <h5>Abilities</h5>
+                <p>{{data.abilities[0]}}</p>
+            </div>
+            
+
+        </div>
+    </div>
+
+</div>

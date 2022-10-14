@@ -1,4 +1,4 @@
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { CardsComponent } from './poke-api/pages/cards/cards.component';
@@ -13,7 +13,7 @@ const routes: Routes = [
     pathMatch:'full'
   },
   {
-    path:'detalles/:id',
+    path:'pokemon/:id',
     component:VerPokemonComponent
   },
   {

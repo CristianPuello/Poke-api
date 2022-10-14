@@ -1,7 +1,7 @@
 <div class="content">
-  <div  routerLink="" *ngFor="let item of pokemons" class="card">
+  <div (click)="goPokemonid(item.id)" *ngFor="let item of pokemons" class="card">
     <img  class="img" 
           [src]="item.img" alt="PokeImg">
-    <h3 class="h3">{{item.name | titlecase}}</h3>
+    <h3>{{item.name | titlecase}}</h3>
   </div>
 </div>

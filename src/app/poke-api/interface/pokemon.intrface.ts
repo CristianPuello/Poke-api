@@ -1,6 +1,4 @@
-export interface pokemon {
-    result:result[];
-}
+
 
 export interface result {
     id:        number;
@@ -11,3 +9,5 @@ export interface result {
     height:    number;
     weight:    number;
 }
+
+

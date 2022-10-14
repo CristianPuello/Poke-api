@@ -1,0 +1,21 @@
+.title{
+    font-family: pokemon ;
+    color: yellow;
+    margin-left: 10px ;
+ }
+ .header{
+    height: 70px;
+    background-color: #000000;
+    box-shadow: 0px 0px 5px 0px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .input{
+    margin:auto;
+    min-width: 30%;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 10px;
+ }

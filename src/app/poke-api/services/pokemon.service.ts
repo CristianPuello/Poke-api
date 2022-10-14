@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
-import { pokemon, result } from '../interface/pokemon.intrface';
+import { result } from '../interface/pokemon.intrface';
 
 
 
@@ -20,9 +20,17 @@ export class ServiceService {
 
   Pokemones():Observable<result[]>{
   
-    return this.http.get<pokemon>(this.servicioUrl).pipe(map((data)=> data.result))
+    return this.http.get<{result:result[]}>(this.servicioUrl).pipe(map((data)=> data.result))
 
   }
+
+  PokemonesId(id:number):Observable<result>{
+  
+    return this.http.get<{result:result}>(`${this.servicioUrl}/${id}`).pipe(map((data)=> data.result))
+
+  }
+  
+
 
 
 }

@@ -1,0 +1,98 @@
+
+
+.container {
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.properties {
+  height: 500px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #837f7f;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0px 8px 20px;
+
+}
+
+.imgPok {
+  height: 30%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-image: url(../ver-pokemon/svg/img.svg);
+  
+
+  img {
+    width: 50%;
+    height: 100%;
+    border: none;
+  }
+
+}
+
+.info {
+  height: 45%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+
+  .name {
+    font-family: pokemon;
+    font-size: 30px;
+  }
+
+  .paragraph {
+    color: #837f7f;
+    text-align: center;
+  }
+
+}
+
+.skills {
+  height: 25%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  place-items: center;
+
+  .ability {
+    background-color: rgba(255, 0, 0, 0.39);
+    width: 100%;
+    height: 100%;
+    border: 1px solid #837f7f;
+
+
+
+    h5{
+        padding: 4px;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    p{
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+  }
+
+
+}
+
+
+
+
+
+
+
